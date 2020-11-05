@@ -8,7 +8,11 @@
 /README.old.md
 /src/ptx.tsx
 /src/assets/fonts
+/src/Person.tsx
+/src/api.json
 /closex.md
+/public/api.json
+/.env
 # testing
 # /coverage
 
