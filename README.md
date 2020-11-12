@@ -5,7 +5,7 @@
 ![name-of-you-image](public\screenshots\Screenshot.png)
 - ```clone repo```
 - obtain api key from [openweathermap](https://home.openweathermap.org/)
-- Create ```.env``` file && add api_key="MY API KEY" 
+- Create/Touch ```.env``` file && add api_key="MY API KEY" 
 
 *Run* ```npm install  ``` to install dependencies
 
