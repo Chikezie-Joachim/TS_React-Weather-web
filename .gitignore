@@ -14,6 +14,7 @@
 /public/api.json
 /.env
 /build
+/src/test.tsx
 # /server
 # testing
 # /coverage
