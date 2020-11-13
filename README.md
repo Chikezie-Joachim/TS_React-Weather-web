@@ -13,5 +13,5 @@
 *Run* ```npm start ``` to start react application.
 
 ## Overview
-![name-of-you-image](public\screenshots\Screenshot.png)
-![name-of-you-image](public\screenshots\mobile.png)
+![name-of-you-image](./public/screenshots/Screenshot.png)
+![name-of-you-image](./public/screenshots/mobile.png)
