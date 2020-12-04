@@ -7,6 +7,7 @@ const app = express();
 const port = 3080;
 
 const api_key = process.env.api_key;
+
 app.use(express.json());
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -17,7 +18,6 @@ app.use(function (req, res, next) {
 
 app.post("/weather", (req, res) => {
   const city = req.body.city;
-  console.log(req.body.city);
   const uri = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
   axios({
     url: uri,
@@ -25,11 +25,9 @@ app.post("/weather", (req, res) => {
   }).then((data) => {
     const d = data;
     res.json(d.data);
-    res.status(500).json("oh noes!");
-    res.status(404).json("I dont have that");
+    res.status(500).json("Internal Server Error!!!");
+    res.status(404).json("Not Fount || I don't have that");
   });
 });
 
-app.listen(port, () => {
-  console.log("listening server at:" + port);
-});
+app.listen(port, () => {});
