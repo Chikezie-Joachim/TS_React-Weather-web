@@ -1,11 +1,8 @@
 import React from "react";
 import "./App.scss";
 import { WeatherDetail } from "./components/components";
-// import endpoint  from "../server.config"
-
 
 let fg:any = {'data':''};
-
 class App extends React.Component {
   state = {
     unknown: true,
@@ -15,8 +12,7 @@ class App extends React.Component {
   public key:any = '7a9edc097dce010437db461921d8df5d'
   public defaultCity:string = "New York";
   public uri:string = "http://localhost:3080/weather";
-  public tt:any;
-  public tp:any;
+  public tt:string | undefined;
 
   public async ftc(url:string, city:string){
     await fetch(url, {method : "POST",

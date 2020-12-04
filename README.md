@@ -1,4 +1,4 @@
-# A typical starter's project on typescript + react + (nodejs && express) app
+# A typical starter's project on typescript + react + (nodejs && express) app (Developement)
 ![name-of-you-image](./public/screenshots/ts_react.png)
 
 
